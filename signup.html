@@ -1,4 +1,12 @@
-<div class="container">
+<h2 class="pb-2 ps-2">Employee Sign Up</h2>
+
+<p class="ps-2 pb-2">
+  If your employer has a Work Hap membership you can create your profile here. Work Hap will then match you with other team members within your organization for virtual one-on-one coffee chats or group discussions of various size.
+</p>
+
+<h4 class="pt-3 ps-2" id="title">Fill out sign up form</h4>
+
+<div class="container pt-1">
   <div class="page mb-4">
     <p>Email</p>
     <input type="email" name="email" placeholder="johnsmith@gmail.com" class="form-control">
@@ -19,9 +27,21 @@
     <input type="text" name="company" placeholder="Adobe" class="form-control">
   </div>
 
+  <div class="page mb-4">
+    <p>Availability (hours/month)</p>
+    <input type="number" name="availability" placeholder="4" class="form-control">
+  </div>
+
   <button type="button" class="btn btn-primary d-block w-100 mt-3" id="submit">Submit</button>
+
+  <div id="invite">
+    <h4 class="pt-5 ps-2" id="title">Invite your employer</h4>
+    <p class="ps-2 pb-2 pt-1">You can invite your employer to join Work Hap if they do not already have a membership:</p>
+    <button type="button" class="btn btn-primary d-block w-100 mt-3" id="membership">View Enterprise Plans</button>
+  </div>
   
-  <p id="message"></p>
+  <h4 class="pt-3 ps-2" id="message"></h4>
   <textarea rows="6" class="form-control mt-3 d-none" id="json"></textarea>
+  <p class="pt-3" id="submitted"></p>
 
 </div>
