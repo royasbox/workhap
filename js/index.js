@@ -1,13 +1,13 @@
 $(window).on("load", start);
 
-function start () {
-    
+function start() {
+
     $("#menu a:first").click();
 
 };
 
-function loadpage (event) {
-    
+function loadpage(event) {
+
     event.preventDefault();
     $("#menu a.active").removeClass("active");
     $(this).addClass("active");
@@ -17,8 +17,8 @@ function loadpage (event) {
 
 }
 
-function getsignup () {
-    
+function getsignup() {
+
     $("#menu a.active").removeClass("active");
     $("#menu li:nth-child(2) a").addClass("active");
 

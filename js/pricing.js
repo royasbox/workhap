@@ -6,8 +6,8 @@ $(document).on("click", "#close", function () {
   $("#alert").addClass("d-none")
 });
 
-function getcontactus () {
-    
+function getcontactus() {
+
   $("#menu a.active").removeClass("active");
   $("#menu li:nth-child(4) a").addClass("active");
 
